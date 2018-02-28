@@ -6,6 +6,10 @@ There will be three "screens" changing one another with different info.
 * 2nd screen: Weather ouside
 * 3rd screen: Raspberry Pi CPU and GPU temps
 
+## Hardware needed
+* Raspberry Pi
+* 1602 LCD screen with I2C interface
+
 # How does it work
 * Small java program which is running in the background and launching python scripts when timers are set and managing data.
 * Python scripts are used to: 
