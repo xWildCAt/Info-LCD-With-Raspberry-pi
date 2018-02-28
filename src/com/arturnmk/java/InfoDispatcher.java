@@ -1,6 +1,8 @@
 package com.arturnmk.java;
 
-public class InfoDispatcher {
+import java.util.TimerTask;
+
+public class InfoDispatcher extends TimerTask {
 
 
     private static String weather ="No data";
@@ -15,4 +17,8 @@ public class InfoDispatcher {
         InfoDispatcher.weather = weather;
     }
 
+    @Override
+    public void run() {
+
+    }
 }
