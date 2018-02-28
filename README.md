@@ -15,7 +15,7 @@ There will be three "screens" changing one another with different info.
 * 1602 LCD screen with I2C interface
 
 # How does it work
-Small java program which is running in the background and launching python scripts when timers are set and managing data. Weather information is updated every 10 minutes using DarkSky API: https://darksky.net/dev. 
+Small java program which is running in the background and launching python scripts when timers are set and managing data. Weather information is updated every 10 minutes using DarkSky API.
 * Python scripts are used to: 
 1) Get weather info from API. 
 2) Display info on the LCD 
@@ -25,6 +25,8 @@ Small java program which is running in the background and launching python scrip
 **_Under development_**
 
 # Credits
+[Powered by Dark Sky](https://darksky.net/poweredby/)
+
 Using L2C_LCD_driver for python. Found at:
 
 http://www.circuitbasics.com/raspberry-pi-i2c-lcd-set-up-and-programming/
