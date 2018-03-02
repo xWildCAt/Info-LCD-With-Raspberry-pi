@@ -5,8 +5,11 @@ import subprocess
 
 currentDT = datetime.datetime.now()
 
+
+
 response = requests.get(
-    'https://api.darksky.net/forecast/YOUR-API-KEY?exclude=minutely,hourly,daily,alerts,flags&units=si')
+    'https://api.darksky.net/forecast/YOUR-API-KEY/CITY_LATITUDE-COMA-CITY_LONGITUDE/?exclude=minutely,hourly,daily,alerts,flags&units=si')
+
 data = response.json()
 print(data["currently"]["summary"], " ", data["currently"]["temperature"])
 
