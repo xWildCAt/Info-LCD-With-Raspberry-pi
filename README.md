@@ -24,9 +24,11 @@ Small java program which is running in the background and launching python scrip
 # Setup and config
 
 1) Clone the repo / download the files 
-2) Find `PyWeather.py` file and edit 9th line with your info  
-3) Open `src` folder and run following command in terminal to compile the project: `javac com/arturnmk/java/*.java`
-4) From `src` folder in terminal type `java com.arturnmk.java.Main` to run the program 
+2) Run command `sudo i2cdetect -y 1` in your terminal to find the LCD address or `sudo i2cdetect -y 0` if you're running older Pi
+3) Find `I2C_LCD_driver.py` file and edit 19 line with 0 if you're running older Pi. Replace line 22 with your address
+4) Find `PyWeather.py` file and edit 9th line with your info  
+5) Open `src` folder and run following command in terminal to compile the project: `javac com/arturnmk/java/*.java`
+6) From `src` folder in terminal type `java com.arturnmk.java.Main` to run the program 
 
 
 
