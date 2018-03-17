@@ -9,5 +9,5 @@ currentDT = datetime.datetime.now()
 
 #print (currentDT.strftime("%H:%M"))
 
-my.lcd_display_string(currentDT.strftime("%H:%M"), 1)
-my.lcd_display_string(sys.argv[0], 2)
+mylcd.lcd_display_string(currentDT.strftime("%H:%M"), 1)
+mylcd.lcd_display_string(sys.argv[1], 2)

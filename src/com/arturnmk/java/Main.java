@@ -10,8 +10,7 @@ public class Main {
         timer.schedule(new SwitchScreen(), 0, 5000); // every 5s
         timer.schedule(new UpdateWeather(), 0, 60000); // every minute
 
-        //System.out.println("I only show myself once");
-
+	PyWrite.write("Getting info...");
 
     }
 }

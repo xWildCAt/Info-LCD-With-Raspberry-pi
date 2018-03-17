@@ -1,6 +1,7 @@
 # Overview
 
-**v0.1** - 2018-02-28
+**v0.1** - 2018-02-28 - Kinda running, no LCD
+**v0.2** - 2018-03-17 - Shows weather and on LCD
 
 **IMPORTANT NOTE: project is under development**
 
@@ -22,7 +23,13 @@ Small java program which is running in the background and launching python scrip
 
 # Setup and config
 
-**_Under development_**
+1) Clone the repo / download the files 
+2) Find `PyWeather.py` file and edit 9th line with your info  
+3) Open `src` folder and run following command in terminal to compile the project: `javac com/arturnmk/java/*.java`
+4) From `src` folder in terminal type `java com.arturnmk.java.Main` to run the program 
+
+
+
 
 # Credits
 [Powered by Dark Sky](https://darksky.net/poweredby/)

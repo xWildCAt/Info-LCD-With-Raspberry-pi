@@ -10,10 +10,12 @@ public class UpdateWeather extends TimerTask {
     public void run() {
         try {
             Process p = Runtime.getRuntime().exec(
-                    "../python/python3 PyWeather.py");
+                    "python3 com/arturnmk/python/PyWeather.py");
             BufferedReader in = new BufferedReader(new InputStreamReader(
                     p.getInputStream()));
-            InfoDispatcher.setWeather(in.readLine());
+String ldl = in.readLine();
+System.out.println(ldl);
+            InfoDispatcher.setWeather(ldl);
         } catch (Exception e) {
         }
 

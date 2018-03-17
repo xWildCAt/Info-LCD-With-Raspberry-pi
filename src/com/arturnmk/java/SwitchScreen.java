@@ -15,7 +15,7 @@ public class SwitchScreen extends TimerTask {
 
         switch (screen){
             case 1:
-                PyWrite.write(InfoDispatcher.getWeather());
+		PyWrite.write(InfoDispatcher.getWeather());
                 //TODO: run python script to write string to LCD. Take time directly from Time library
 
                 break;
