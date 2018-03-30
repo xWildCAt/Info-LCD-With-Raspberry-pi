@@ -2,11 +2,16 @@ import requests
 import json
 import datetime
 import subprocess
+import config as cfg
 
 currentDT = datetime.datetime.now()
 
+import config as cfg
+
+restString='https://api.darksky.net/forecast/'+ cfg.data['apikey'] + '/' + cfg.data['latitude']+','+cfg.data['longitude'] + '?exclude=minutely,hourly,daily,alerts,flags&units=si'
+
 response = requests.get(
-    'https://api.darksky.net/forecast/5eb223d2eb8b6e2357ea1cc151a84ba8/54.6872,25.2797?exclude=minutely,hourly,daily,alerts,flags&units=si')
+    restString)
 data = response.json()
 print(data["currently"]["summary"], " ", data["currently"]["temperature"])
 

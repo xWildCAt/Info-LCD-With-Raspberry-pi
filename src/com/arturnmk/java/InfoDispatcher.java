@@ -5,7 +5,7 @@ import java.util.TimerTask;
 public class InfoDispatcher extends TimerTask {
 
 
-    private static String weather ="No data";
+    private static String weather = "No data";
 
     public static String getWeather() {
         return weather;
