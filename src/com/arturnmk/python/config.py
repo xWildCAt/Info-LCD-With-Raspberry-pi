@@ -1,0 +1,5 @@
+data = {
+'apikey' : '',
+'latitude': '',
+'longitude' : ''
+}
